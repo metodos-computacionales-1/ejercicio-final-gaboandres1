@@ -45,7 +45,7 @@ int main(int argc, char** argv)
   Pendulum p;
   double t=0.0;//Time 
   int N = atoi(argv[1]);//steps of evolution
-  FD = atoi(argv[2]) + argv([2])/10.0 + argv([3])/100.0;
+  FD = atoi(argv[2]) + atoi(argv[3])/10.0 + atoi(argv[4])/100.0 + atoi(argv[5])/1000.0 + atoi(argv[6])/10000.0;
   // intialization
   initial_conditions(p);
   for (int ii=1; ii<=N; ii++)
